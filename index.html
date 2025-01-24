@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homepage Wireframe</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+      }
+      .header {
+        background: #ccc;
+        padding: 20px;
+      }
+      .nav {
+        background: #333;
+        padding: 10px;
+        color: white;
+        display: flex;
+        justify-content: center;
+      }
+      .nav ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+      }
+      .nav li {
+        position: relative;
+        padding: 10px 20px;
+        cursor: pointer;
+      }
+      .nav li ul {
+        display: none;
+        position: absolute;
+        background: #444;
+        padding: 10px;
+        list-style: none;
+        top: 30px;
+        left: 0;
+      }
+      .nav li:hover ul {
+        display: block;
+      }
+      .hero {
+        background: lightgray;
+        padding: 50px;
+        margin: 20px;
+      }
+      .cta {
+        background: #007bff;
+        color: white;
+        padding: 15px 25px;
+        font-size: 18px;
+        border: none;
+        cursor: pointer;
+      }
+      .quick-links {
+        display: flex;
+        justify-content: space-around;
+        margin: 20px;
+      }
+      .box {
+        background: #ddd;
+        padding: 30px;
+        width: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .box img {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 10px;
+      }
+      .footer {
+        background: #333;
+        color: white;
+        padding: 10px;
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-around;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header"><h1>Tanitian Travel</h1></div>
+    <div class="nav">
+      <ul>
+        <li>Home</li>
+        <li>
+          Lodging
+          <ul>
+            <li>Hotels</li>
+            <li>Resorts</li>
+            <li>Bed & Breakfasts</li>
+          </ul>
+        </li>
+        <li>
+          Dining
+          <ul>
+            <li>Local Cuisine</li>
+            <li>Fine Dining</li>
+            <li>Casual Eateries</li>
+          </ul>
+        </li>
+        <li>Attractions</li>
+        <li>Transportation</li>
+        <li>Contact</li>
+      </ul>
+    </div>
+
+    <div class="hero">
+      <h2>Plan Your Trip to Taniti</h2>
+      <p>Discover the best accommodations, attractions, and dining options.</p>
+      <p>Click to see the next page</p>
+      <button class="cta"><a href="inner.html">Start Exploring</a></button>
+    </div>
+
+    <div class="quick-links">
+      <div class="box"><img src="hotel-icon.png" alt="Hotel" />Find Hotels</div>
+      <div class="box">
+        <img src="attraction-icon.png" alt="Attractions" />Explore Attractions
+      </div>
+      <div class="box">
+        <img src="restaurant-icon.png" alt="Dining" />View Restaurants
+      </div>
+      <div class="box">
+        <img src="transport-icon.png" alt="Transport" />Transportation Options
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>© 2025 Tanitian Travel</p>
+      <p>Contact Us | Social Media Links</p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inner Page Wireframe</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+      }
+      .header {
+        background: #ccc;
+        padding: 20px;
+      }
+      .nav {
+        background: #333;
+        padding: 10px;
+        color: white;
+      }
+      .content {
+        display: flex;
+        width: 80%;
+        margin: auto;
+      }
+      .sidebar {
+        width: 30%;
+        background: #ddd;
+        padding: 10px;
+        text-align: left;
+      }
+      .sidebar h3 {
+        cursor: pointer;
+        background: #aaa;
+        padding: 10px;
+      }
+      .filter-options {
+        display: none;
+        padding: 10px;
+        background: #eee;
+      }
+      .main {
+        width: 65%;
+        padding: 10px;
+        text-align: left;
+      }
+      .footer {
+        background: #333;
+        color: white;
+        padding: 10px;
+        margin-top: 20px;
+        clear: both;
+      }
+    </style>
+    <script>
+      function toggleFilters() {
+        var filters = document.getElementById("filter-options");
+        filters.style.display =
+          filters.style.display === "block" ? "none" : "block";
+      }
+    </script>
+  </head>
+  <body>
+    <div class="header"><h1>Tanitian Travel</h1></div>
+    <div class="nav">
+      <a href="index.html">Home</a> | Lodging | Dining | Attractions |
+      Transportation | Contact
+    </div>
+
+    <div class="content">
+      <div class="sidebar">
+        <h3 onclick="toggleFilters()">Filter by: ▼</h3>
+        <div id="filter-options" class="filter-options">
+          <p>
+            Hotel Type:
+            <select>
+              <option>All</option>
+              <option>Luxury</option>
+              <option>Budget</option>
+            </select>
+          </p>
+          <p>
+            Price Range:
+            <select>
+              <option>$</option>
+              <option>$$</option>
+              <option>$$$</option>
+            </select>
+          </p>
+          <p>
+            Location:
+            <select>
+              <option>Beachfront</option>
+              <option>City Center</option>
+              <option>Rainforest</option>
+            </select>
+          </p>
+        </div>
+      </div>
+
+      <div class="main">
+        <h2>Explore Lodging Options</h2>
+        <p>Find the best hotels, resorts, and rental homes in Taniti.</p>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>© 2025 Tanitian Travel | Contact Us | Social Media Links</p>
+    </div>
+  </body>
+</html>
