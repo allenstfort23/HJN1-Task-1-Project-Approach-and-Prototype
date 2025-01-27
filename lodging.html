@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lodging in Taniti</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+      }
+      .header {
+        background: #ccc;
+        padding: 20px;
+      }
+      .nav {
+        background: #333;
+        padding: 10px;
+        color: white;
+      }
+      .content {
+        width: 80%;
+        margin: auto;
+        padding: 20px;
+        text-align: left;
+      }
+      .filter {
+        background: #f9f9f9;
+        padding: 10px;
+        margin-bottom: 20px;
+      }
+      .lodging-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+      }
+      .lodging {
+        background: #ddd;
+        padding: 15px;
+        border-radius: 5px;
+        width: 30%;
+        text-align: center;
+      }
+      .footer {
+        background: #333;
+        color: white;
+        padding: 10px;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header"><h1>Lodging in Taniti</h1></div>
+    <div class="nav">
+      <a href="index.html">Home</a> | <a href="lodging.html">Lodging</a> |
+      <a href="dining.html">Dining</a> |
+      <a href="attractions.html">Attractions</a> | Transportation |
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <div class="content">
+      <h2>Find the Best Places to Stay in Taniti</h2>
+      <p>Choose from hotels, resorts, and family-owned bed & breakfasts.</p>
+
+      <div class="filter">
+        <label for="lodging-type">Filter by Type:</label>
+        <select id="lodging-type">
+          <option>All</option>
+          <option>Hotels</option>
+          <option>Resorts</option>
+          <option>Bed & Breakfast</option>
+        </select>
+      </div>
+
+      <div class="lodging-list">
+        <div class="lodging">
+          <h3>Taniti Beach Resort</h3>
+          <p>Luxury beachfront resort with full amenities.</p>
+        </div>
+        <div class="lodging">
+          <h3>Sunset Inn</h3>
+          <p>Cozy family-owned hotel in Taniti City.</p>
+        </div>
+        <div class="lodging">
+          <h3>Rainforest Retreat</h3>
+          <p>Experience nature in this eco-friendly bed & breakfast.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>© 2025 Tanitian Travel | Contact Us | Social Media Links</p>
+    </div>
+  </body>
+</html>

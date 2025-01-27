@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Attractions in Taniti</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+      }
+      .header {
+        background: #ccc;
+        padding: 20px;
+      }
+      .nav {
+        background: #333;
+        padding: 10px;
+        color: white;
+      }
+      .content {
+        width: 80%;
+        margin: auto;
+        padding: 20px;
+        text-align: left;
+      }
+      .filter {
+        background: #f9f9f9;
+        padding: 10px;
+        margin-bottom: 20px;
+      }
+      .attractions-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+      }
+      .attraction {
+        background: #ddd;
+        padding: 15px;
+        border-radius: 5px;
+        width: 30%;
+        text-align: center;
+      }
+      .footer {
+        background: #333;
+        color: white;
+        padding: 10px;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header"><h1>Attractions in Taniti</h1></div>
+    <div class="nav">
+      <a href="index.html">Home</a> | <a href="inner.html">Lodging</a> |
+      <a href="dining.html">Dining</a> |
+      <a href="attractions.html">Attractions</a> | Transportation |
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <div class="content">
+      <h2>Explore Taniti’s Top Attractions</h2>
+      <p>Discover the best places to visit during your stay in Taniti.</p>
+
+      <div class="filter">
+        <label for="category">Filter by Category:</label>
+        <select id="category">
+          <option>All</option>
+          <option>Beaches</option>
+          <option>Rainforest Adventures</option>
+          <option>Volcano Tours</option>
+          <option>Historical Sites</option>
+        </select>
+      </div>
+
+      <div class="attractions-list">
+        <div class="attraction">
+          <h3>Yellow Leaf Bay</h3>
+          <p>
+            Beautiful white sandy beaches perfect for relaxation and water
+            sports.
+          </p>
+        </div>
+        <div class="attraction">
+          <h3>Rainforest Zip-Lining</h3>
+          <p>
+            Experience the lush rainforest canopy with an adrenaline-filled
+            adventure.
+          </p>
+        </div>
+        <div class="attraction">
+          <h3>Taniti Volcano Hike</h3>
+          <p>
+            Guided tour to the island's active volcano with breathtaking views.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>© 2025 Tanitian Travel | Contact Us | Social Media Links</p>
+    </div>
+  </body>
+</html>
