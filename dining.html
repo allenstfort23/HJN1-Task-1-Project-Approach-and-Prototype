@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dining</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+      }
+      .header {
+        background: #ccc;
+        padding: 20px;
+      }
+      .nav {
+        background: #333;
+        padding: 10px;
+        color: white;
+      }
+      .content {
+        width: 80%;
+        margin: auto;
+        padding: 20px;
+        text-align: left;
+      }
+      .filter {
+        background: #f9f9f9;
+        padding: 10px;
+        margin-bottom: 20px;
+      }
+      .restaurant-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+      }
+      .restaurant {
+        background: #ddd;
+        padding: 15px;
+        border-radius: 5px;
+        width: 30%;
+        text-align: center;
+      }
+      .footer {
+        background: #333;
+        color: white;
+        padding: 10px;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header"><h1>Dining in Taniti</h1></div>
+    <div class="nav">
+      <a href="index.html">Home</a> | <a href="inner.html">Lodging</a> |
+      <a href="dining.html">Dining</a> | Attractions | Transportation |
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="content">
+      <h2>Explore Taniti's Best Restaurants</h2>
+      <p>Discover local and international Cuisine during your stay</p>
+
+      <div class="filter">
+        <label for="cuisine"> Filter by Cuisine:</label>
+        <select id="cuisine">
+          <option>All</option>
+          <option>Local Seafood</option>
+          <option>American</option>
+          <option>Pan-Asian</option>
+        </select>
+      </div>
+      <div class="restaurant-list">
+        <div class="restaurant">
+          <h3>Ocean Breeze Seafood</h3>
+          <p>Freshly caught fish and rice dishes.</p>
+        </div>
+        <div class="restaurant">
+          <h3>Taniti Grill</h3>
+          <p>Authentic American-style burgers and steaks</p>
+        </div>
+        <div class="restaurant">
+          <h3>Island Wok</h3>
+          <p>Delicious Pan-Asian cuisine with a tropical twist.</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
